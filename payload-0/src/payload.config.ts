@@ -15,6 +15,8 @@ export default buildConfig({
     bundler: webpackBundler(),
   },
   editor: slateEditor({}),
+  cors: ["http://localhost:5173"],
+  csrf: ["http://localhost:5173"],
   collections: [Users, typescript],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
